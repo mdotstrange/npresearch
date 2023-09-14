@@ -51,8 +51,8 @@ public class CrowdAgent : MonoBehaviour
 
             Debug.Log("Set waitTime to " + CrowdAgentBehaviors[ActiveIndex].WaitTime + " On " + BehaviorTree.ExternalBehavior.name);
 
-
-            BehaviorTree.SetVariableValue("WaitTime", CrowdAgentBehaviors[ActiveIndex].WaitTime);
+           // BehaviorTree.ExternalBehavior.SetVariableValue("WaitTime", CrowdAgentBehaviors[ActiveIndex].WaitTime);
+           BehaviorTree.SetVariableValue("WaitTime", CrowdAgentBehaviors[ActiveIndex].WaitTime);
 
            
 

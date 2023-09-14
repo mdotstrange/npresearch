@@ -389,7 +389,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BehaviorTree: {fileID: 268000555}
   ActiveIndex: 0
-  externalBehaviorTrees: []
+  CrowdAgentBehaviors: []
 --- !u!114 &268000555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -408,7 +408,7 @@ MonoBehaviour:
   restartWhenComplete: 0
   logTaskChanges: 0
   group: 0
-  resetValuesOnRestart: 1
+  resetValuesOnRestart: 0
   externalBehavior: {fileID: 0}
   mBehaviorSource:
     behaviorName: EmptyBehavior
@@ -2502,6 +2502,12 @@ MonoBehaviour:
   - {fileID: 690643869}
   - {fileID: 1064897686}
   CrowdAgentSequencer: {fileID: 1733685552}
+  CrowdAgentPrefab: {fileID: 0}
+  TargetCrowdAgent: {fileID: 0}
+  CrowdAgentCount: 0
+  ActionNames: []
+  Targets: []
+  WaitTimes: []
 --- !u!114 &1733685552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2543,7 +2549,6 @@ MonoBehaviour:
     BehaviorName: 
     WaitTime: 0
     TargetName: 
-  SelectedAgent: {fileID: 268000554}
 --- !u!1001 &1740832333
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2890,6 +2895,22 @@ PrefabInstance:
     - target: {fileID: 8875838586448580899, guid: 86420b8b641844065bf9d119cdb4842b, type: 3}
       propertyPath: m_Name
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875838586448580902, guid: 86420b8b641844065bf9d119cdb4842b, type: 3}
+      propertyPath: MyBehaviorsWithTargets.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875838586448580902, guid: 86420b8b641844065bf9d119cdb4842b, type: 3}
+      propertyPath: MyBehaviorsWithTargets.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875838586448580902, guid: 86420b8b641844065bf9d119cdb4842b, type: 3}
+      propertyPath: MyBehaviorsWithTargets.Array.data[1]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875838586448580902, guid: 86420b8b641844065bf9d119cdb4842b, type: 3}
+      propertyPath: MyBehaviorsWithTargets.Array.data[2]
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86420b8b641844065bf9d119cdb4842b, type: 3}

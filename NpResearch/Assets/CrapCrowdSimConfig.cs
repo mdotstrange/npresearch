@@ -93,6 +93,12 @@ public class CrapCrowdSimConfig : MonoBehaviour
         CrowdAgentSequencer.SequencingComplete(TargetCrowdAgent);
     }
 
+    //functions to add
+    //randomize all brains
+    //Apply active brain to all
+    //Copy brain
+    //paste brain
+
 
 
 }

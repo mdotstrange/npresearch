@@ -126,6 +126,7 @@ public class DropdownHelper_Behavior : MonoBehaviour
         CrapCrowdSimConfig = GetComponentInParent<CrapCrowdSimConfig>();
         TimeDropdown.gameObject.SetActive(true);
 
+        ReceiveChange(0);
 
     }
 }
