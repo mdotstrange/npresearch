@@ -82,4 +82,33 @@ public class CrowdAgent : MonoBehaviour
         SetBehaviorAndPlay();
     }
 
+    //ADD code to this class to run the random farts etc- using MEC?
+    //Most performant way?
+
+}
+
+[System.Serializable]
+public class CrowdAgentBrain
+{
+    public List<AgentActionData> Behaviors = new List<AgentActionData>();
+
+    //Attributes
+    public bool Flammable;
+    public bool Explosive;
+    public bool HasVoice;
+    public bool MirrorActor1Anims;
+    public bool MirrorActor2Anims;
+    public int AnimationSet;
+    public bool RandomizesAnimations;
+    public bool RandomBurps;
+    public bool RandomFarts;
+    public bool RandomDies;
+    public bool RandomSpins;
+    public bool RandomPuke;
+    public bool RandomBleed;
+
+    public List<string> VoiceAudioFilePaths = new List<string>();
+
+    public bool RandomizeVoiceFilePitch;
+
 }

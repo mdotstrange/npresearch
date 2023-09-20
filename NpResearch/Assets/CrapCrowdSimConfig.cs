@@ -9,6 +9,9 @@ public class CrapCrowdSimConfig : MonoBehaviour
     public List<DropdownHelper_Behavior> ActionSlots = new List<DropdownHelper_Behavior>();
     public CrowdAgentSequencer CrowdAgentSequencer;
 
+    //load the brains in here
+    public List<CrowdAgentBrain> Brains = new List<CrowdAgentBrain>();
+
 
     //Load in vrm to use as CrowdAgent + add components etc
 
